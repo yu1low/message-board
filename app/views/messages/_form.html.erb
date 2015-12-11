@@ -19,10 +19,18 @@
     <div class="panel-body">
       <div class="form-group">
         <div class="row">
-        <div class="col-xs-2">
-        名前:
-        <%= f.text_field :name, class: "form-control", placeholder: "お名前" %>
+          <div class="col-xs-2">
+            名前:
+            <%= f.text_field :name, class: "form-control", placeholder: "お名前" %>
+          </div>
         </div>
+      </div>
+      <div class="form-group">
+        <div class="row">
+          <div class="col-xs-2">
+            年齢:
+            <%= f.number_field :age, class: "form-control", placeholder: "年齢" %>
+          </div>
         </div>
       </div>
       <div class="form-group">
@@ -30,7 +38,7 @@
         <%= f.text_area :body, class: "form-control", size: "100x5", placeholder: "投稿内容を記入してください" %>
       </div>
       <div class="form-group">
-      <%= f.submit "投稿", class: "btn btn-sm btn-primary" %>
+        <%= f.submit "投稿", class: "btn btn-sm btn-primary" %>
       </div>
     </div>
   </div>
